@@ -6,7 +6,7 @@
 			<div class="panel panel-info">
 				<div class="panel-heading">Admin Dashboard</div>
 				<div class="panel-body">
-					<a href="{{url('admin/post')}}" class="btn btn-lg btn-success col-xs-12">Manage Posts</a>
+					<a href="{{url('admin/posts')}}" class="btn btn-lg btn-success col-xs-12">Manage Posts</a>
 				</div>
 			</div>
 		</div>
