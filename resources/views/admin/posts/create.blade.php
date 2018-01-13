@@ -14,6 +14,12 @@
 						</div>
 					@endif
 
+					 @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
 					<form action="{{url('admin/posts')}}" method="POST">
 						{!!csrf_field() !!}
 						<input type="text" name="title" class="form-control" required="required" plachoder="Enter post title">

@@ -35,7 +35,7 @@ class PostsController extends Controller
     	$post->number_of_saved = 99;
 
     	if($post->save()){
-    		return redirect('admin/posts')->withErrors('Created new post!');
+    		return redirect('admin/posts')->with('success','Created new post!');
     	}else{
     		return redirect()->back()->withInput()->withErrors('Failed to save post!');
     	}

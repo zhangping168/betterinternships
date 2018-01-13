@@ -24,3 +24,7 @@ Route::group(['middleware'=>'auth', 'namespace'=>'Admin', 'prefix'=>'admin'], fu
 	Route::resource('posts', 'PostsController');
 
 });
+
+Route::get('posts/{id}', 'PostsController@show');
+Route::post('comment','CommentsController@store');
+

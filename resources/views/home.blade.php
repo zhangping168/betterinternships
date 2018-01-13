@@ -11,7 +11,7 @@
             @foreach($posts as $post)
             <li style="margin:50px 0">
                 <div class="title">
-                    <a href="{{url('post/'.$post->id)}}">
+                    <a href="{{url('posts/'.$post->id)}}">
                         <h4>{{$post->title}}</h4>
                     </a>
                 </div>
